@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+header{
+    display:flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1;
+    background-color:#ffff;
+    opacity: 0.95;
+
+    /* padding-left: 1rem; */
+    height: 10vh;
+}
+header .logo{
+    /* border: 1px solid green; */
+    /* text-align: center; */
+    padding: 0rem 3rem;
+    /* border: 1px solid green; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 3vw;
+    background-color: #fff;
+    margin-left: 1rem;
+}
+header .logo i{
+    color: rgb(53, 139, 219);
+    font-size: 2.8rem;
+    padding:1rem 1rem;
+}
+header .logo:hover{
+    background-color: rgb(229, 237, 247);
+}
+header .primary-heading{
+    /* position: fixed; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* flex-direction:row;
+    flex-wrap: wrap; */
+    background-color: white;
+     width:59vw;
+    /* height: 10vh;
+    z-index: 1;
+    opacity: 0.95;
+    padding-left: 1rem; */ 
+    /* padding: 0rem 1rem; */
+}
+header .hide{
+    display: none;
+}
+header .top_tweet_img img{
+    width: 4vw;
+    justify-self: space-between;
+    border-radius: 100%;
+    object-fit: contain;
+    /* margin-left: 24.5rem; */
+    margin-left: 25rem;
+}
+header .primary-heading h2{
+    font-size: 2rem;
+    /* justify-self: space-between; */
+    font-family: 'Roboto Slab', serif;
+}
+header .primary-heading .heading{
+    margin-right: 25rem;
+}
+header .top_tweet_img img:hover{
+    background-color: rgb(136, 136, 136)
+}
+
+.search{
+    margin: 0.5rem 1rem 0rem 0.5rem;
+    background-color: rgb(235, 228, 228);
+    width: 25vw;
+    border-radius: 2rem;
+    display: flex;
+    /* position: fixed; */
+    /* flex-direction: row; */
+    align-items: center;
+    /* z-index: 1; */
+    /* opacity: 0.95; */
+    padding: 0rem 1rem;
+}
+.search i{
+ width:2.5vw;
+ font-size: 1.5rem;
+}
+.search input{
+    width: 100%;
+    background: transparent;
+    padding: 1rem ;
+    outline: none;
+    border:0;
+    font-size: 1.7rem;
+}
+.search i:visited{
+    background-color: #fff;
+    /* border: 0.1rem solid rgb(53, 139, 219); */
+    color: rgb(53, 139, 219);
+}  
+.search:active{
+    background-color: #fff;
+    border: 0.1rem solid rgb(53, 139, 219);
+}
+.search_div{
+    /* margin: 0.5rem 2rem 0rem 1rem;  */
+    background-color: #ffffff;
+   
+    /* border-radius: 2rem; */
+    display: flex;
+   
+    align-items: center;
+    /* z-index: 1; */
+    /* opacity: 0.95; */
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/* Start Left Baar  */
+.left-baar{
+    /* border: 1px solid red; */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: white;
+    /* width:60vw; */
+    /* height: 10vh; */
+    z-index: 1;
+    opacity: 0.95;
+    /* padding: 0.5rem; */
+    /* height: 10vh; */
+    margin: 6rem 1rem;
+}
+.navigation{
+    margin-top: 1rem; 
+}
+
+nav ul{
+    /* padding: 1rem 1rem; */
+    /* padding-top: 1rem; */
+}
+ul li #hidden{
+    display: none;
+}
+nav ul li{
+    list-style: none;
+    /* padding:1rem 1rem; */
+    text-align: center;
+    border-radius: 100%;
+    padding: 0.5rem 0.5rem;
+    margin: 0rem 0rem;
+
+}
+nav li a{
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 1rem 1rem; */
+    color:black;
+
+}
+nav li a i{
+    padding: 1rem 1.2rem;
+}
+nav li:hover{
+    background-color: rgb(238, 228, 228)
+}
+.add-tweet{
+    background-color: rgb(53, 139, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+    border-radius: 100%;
+    color: white;
+    box-shadow: 4px 5px 5px rgb(187, 186, 186);
+    margin: 0.5rem 0.5rem;
+}
+.add-tweet i{
+    font-size: 1.5rem;
+    color: white;
+}
+.add-tweet:hover{
+    background-color: rgb(46, 134, 216);
+}
+
+.nav-profile img{
+    width: 5.5vw;
+    border-radius: 100%;
+    object-fit: contain;
+    margin: 0.5rem 0.5rem;
+}
+/* End Left Baar  */
+
+/* Start Main Section  */
+.main-content{
+    width: 60vw;
+    border-left: 1px solid  rgb(235, 229, 229);
+    border-right: 1px solid  rgb(235, 229, 229);
+    margin-left: 10rem;
+}
+
+
+
+.hero__profile_sec{
+    margin-top: 8rem;
+    /* padding: 3rem 1.5rem; */
+    /* border: 1px solid red; */
+}
+.hero__profile{
+    border-bottom: 1px solid rgb(235, 229, 229);
+    /* margin: 1rem 0.5rem; */
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.hero__profile_sec .hero__profile img{
+    width: 5vw;
+    border-radius: 100%;
+    object-fit: contain;
+    margin: 1rem 0.5rem;
+
+}
+.hero__profile .write_tweet{
+    padding-left: 1rem;
+    width: 50vw;
+    /* padding-top: 1rem; */
+}
+.hero__profile .write_tweet textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    /* border-bottom: 1px solid #ccc; */
+    background: transparent;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+    resize: none;
+}
+.add__somethings{
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 1rem 1rem; */
+    border-bottom:1px solid rgb(235, 229, 229);
+}
+.some_actions {
+  padding: 2rem 1rem;
+}
+
+.some_actions a i{
+    color:rgb(53, 139, 219);
+    font-size: 2rem;
+    padding: 0.1rem 0.5rem;
+}
+.add__somethings .tweet_btn{
+    margin-right: 2rem;
+    /*  */
+}
+.tweet_btn .tweet__btn{
+    padding: 1rem 2rem;
+    border:rgb(46, 134, 216) 1px solid;
+    border-radius: 10rem;
+    color:white;
+    background-color:rgb(53, 139, 219);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+}
+.see_more{
+    padding: 0.5rem 2rem;
+    border-bottom:1px solid rgb(241, 237, 237);
+    height: 10vh;
+}
+.see__more a{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color:rgb(53, 139, 219);
+    text-decoration: none;
+}
+.see__more a:hover{
+    text-decoration: underline;
+    color:rgb(44, 133, 218);
+}
+.post_container{
+    width: 50vw;
+    padding: 0.5rem;
+    background-color:rgb(255, 248, 248);
+    display: flex;
+    align-items: start;
+}
+
+.post_container .user_profile img{
+    width: 5vw;
+    border-radius: 100%;
+    object-fit: contain;
+    margin: 0.5rem;
+
+}   
+.post_header{
+    width: 50vw;
+       /* margin: 0.5rem; */
+}
+ .post_header .name{
+     /* padding: 1rem 1rem; */
+     display: inline-block;
+    font-size: 1.75rem;
+    font-family: 'Roboto Slab', serif;
+}
+.post_header .date{
+    /* padding: 1rem 1rem; */
+   font-size: 1.25rem;
+   font-family: 'Roboto Slab', serif;
+   color: rgb(104, 104, 104);
+}
+.post_header .post_desc{
+   padding: 0.2rem 0rem 1.5rem 0rem;
+   font-size: 1.5rem;
+}
+.post_container .mores i{
+    /* padding: 1.2rem 1.2rem; */
+    font-size: 1.5rem;
+    color: rgb(104, 104, 104);
+}
+.post_container .mores i:hover{
+    color:rgb(69, 145, 216)
+}
+.mores{
+    /* margin-left: 12rem; */
+    border-radius: 100%;
+    padding: 1rem;
+    /* border: 1px solid black; */
+    
+}
+.mores:hover{
+    background-color: rgb(200, 217, 238);
+} 
+.post_header .post_img img{
+    object-fit: contain;
+    width: 50vw;
+    border-radius: 2rem;
+}
+.post_actions{
+    padding: 0.5rem 0.5rem;
+}
+.post_actions ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+.post_actions ul li{
+    list-style-type: none;
+    padding: 1rem 1rem;
+    border-radius:100%;
+    /* border: 1px solid black; */
+}
+.post_actions ul li i{
+    font-size: 1.7rem;
+    color:rgb(138, 136, 136)
+}
+.post_actions #msg:hover{
+    background-color:rgb(190, 211, 236);
+    color:rgb(53, 139, 219)
+    
+
+}
+.post_actions #msg i:hover{
+    color:rgb(53, 139, 219)
+}
+.post_actions #retweet:hover{
+    background-color:rgb(190, 229, 217);
+    color:rgb(20, 177, 127);
+
+}
+.post_actions #retweet i:hover{
+    color:rgb(20, 177, 127);
+}
+.post_actions #like:hover{
+    background-color:rgb(231, 160, 184);
+    color:rgb(230, 32, 98);
+
+}
+.post_actions #like i:hover{
+    color:rgb(230, 32, 98);
+}
+.post_actions #share:hover{
+    background-color:rgb(190, 229, 217);
+    color:rgb(53, 139, 219)
+
+}
+.post_actions #share i:hover{
+    color:rgb(53, 139, 219)
+}
+/* End Main Section  */
+
+/* Start Right Section */
+.right-bar{
+    margin: 0rem 2rem 0rem 2rem; 
+}
+
+.whats{
+    margin-top: 6rem;
+    padding: 1rem; 
+    width: 25.5vw;
+    background-color: rgb(238, 229, 229);
+    border-radius: 1.2rem;
+}
+.whats h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    padding: 1rem;
+}
+.whats .anchor{
+    display: block;
+  text-decoration: none;
+  color: rgb(53, 139, 219); 
+  font-size:1.5rem;
+  padding: 1rem 
+}
+.whats .anchor:hover{
+    width: 24vw;
+
+    text-decoration: underline;
+    color: rgb(44, 132, 214); 
+    background-color:rgb(224, 219, 219) ;
+  }
+.short_post{
+    display: flex;
+    justify-self: space-between;
+    padding: 1rem;
+}
+.little_post{
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem; */
+}
+.little_post .org_name{
+    font-size: 1.7rem;
+    color: rgb(104, 104, 104);
+}
+.little_post .org_desc{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.little_post .link a{
+    text-decoration: none;
+    color:rgb(53, 139, 219);
+    font-size: 1.5rem;
+}
+.link a:hover{
+    color:rgb(50, 132, 209);
+    text-decoration: underline;
+}
+.short_post .img img{
+    object-fit: contain;
+    width:10vw;
+    height: 15vh;
+    border-radius: 1.2rem;
+}
+.short_post:hover{
+    background-color:rgb(224, 219, 219);
+}
+.follow_suggestion{
+    margin-top: 1rem;
+    padding: 1rem; 
+    width: 25.5vw;
+    background-color: rgb(238, 229, 229);
+    border-radius: 1.2rem;
+}
+.follow_suggestion h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    padding: 1rem;
+}
+.suggest_frds{
+    
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    /* position: relative; */
+}
+.suggest_frds:hover{
+    width: 24vw;
+    background-color: rgb(238, 229, 229);
+}
+.user_pic{
+    margin: 0.5rem;
+}
+.suggest_frds .user_pic img{
+   
+    border-radius:100%;
+    width: 5vw;
+    /* padding: 1rem */
+}
+.user_name{
+    margin: 0.5rem;
+  
+}
+.suggest_frds .user_name h4{
+     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    /* padding: 1rem; */
+}
+.suggest_frds .user_name h4:hover{
+    text-decoration: underline;
+}
+.suggest_frds .user_name a{
+    font-family: 'Roboto Slab', serif;
+   /* font-weight: bold; */
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: rgb(104, 104, 104);
+   /* padding: 1rem; */
+}
+.suggest_frds .follow_btn{
+    margin: 0.25rem 3rem;
+    /* padding: 0.25rem 2rem; */
+}
+.suggest_frds .btn_follow{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 0.7rem 2rem;
+    background-color:rgb(44, 43, 43);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+}
+.suggest_frds .btn_follow:hover{
+    background-color: black;
+}
+.follow_suggestion .anchor{
+    display: block;
+  text-decoration: none;
+  color: rgb(53, 139, 219); 
+  font-size:1.5rem;
+  padding: 1rem 
+}
+.follow_suggestion .anchor:hover{
+    width: 24vw;
+    text-decoration: underline;
+    color: rgb(44, 132, 214); 
+    background-color:rgb(224, 219, 219) ;
+  }
+  .footer{
+    margin-top: 1rem;
+    padding: 1rem; 
+    width: 25.5vw;
+  }
+  .footer_para{
+      word-spacing: 0.5rem;
+      font-size: 1.3rem;
+      color: rgb(104, 104, 104);
+      line-height: 1.75rem ;
+  }
+/* End Right Section */
